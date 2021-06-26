@@ -26,7 +26,7 @@ def get_filters():
         else:
             break
     while True:
-        print("Which day do you want to explore? Choose (sun, mon, tues, wed, thurs, fri, sat or all)")
+        print("Which day do you want to explore? Choose (sunday, monday, tuesday, wednesday, thursday, friday, saturday or all)")
         day_of_week = input().lower()
         if day_of_week not in ("sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "all"):
             print("Invalid answer")
