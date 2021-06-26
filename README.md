@@ -17,3 +17,6 @@ washington.csv
 
 ### Credits
 stackoverflow.com
+
+### Author
+Omar Fouda
