@@ -28,7 +28,7 @@ def get_filters():
     while True:
         print("Which day do you want to explore? Choose (sun, mon, tues, wed, thurs, fri, sat or all)")
         day_of_week = input().lower()
-        if day_of_week not in ("sun", "mon", "tues", "wed", "thurs", "fri", "sat", "all"):
+        if day_of_week not in ("sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "all"):
             print("Invalid answer")
             continue
         else:
@@ -59,7 +59,7 @@ def load_data(city, month, day):
 
     # filter by day of week if applicable
     if day != 'all':
-        days = ["sun", "mon", "tues", "wed", "thurs", "fri", "sat"]
+        days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
         day = days.index(day) + 1
         # filter by day of week to create the new dataframe
         df = df[df['day'] == day]
